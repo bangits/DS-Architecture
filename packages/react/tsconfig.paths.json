@@ -1,0 +1,9 @@
+// This config contains only paths that should be replaced with tsc-alias
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "paths": {
+      "@my-ui/react/*": ["./src/*"]
+    }
+  }
+}

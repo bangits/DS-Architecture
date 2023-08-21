@@ -1,0 +1,13 @@
+{
+  "include": ["."],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@my-ui/core/*": ["../../packages/core/src/*"],
+      "@my-ui/core": ["../../packages/core/src"],
+      "@my-ui/react/*": ["../../packages/react/src/*"],
+      "@my-ui/react": ["../../packages/react/src"]
+    }
+  }
+}

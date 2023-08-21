@@ -3,10 +3,13 @@
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"]
     },
     "lint": {},
+    "deploy": {
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
+      "dependsOn": ["build"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

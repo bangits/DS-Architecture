@@ -1,16 +1,20 @@
 {
   "name": "@my-ui/react",
-  "version": "0.0.0",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "version": "12.0.11",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "tsc *.ts",
+    "deploy": "cd dist/react/src && npm publish",
+    "bundle": "tsc --project tsconfig.json && tsc-alias -p tsconfig.paths.json",
+    "copy": "cp package.json dist/react/src && cp ../../.npmrc dist/react/src",
+    "build": "npm run bundle && npm run copy",
     "lint": "eslint \"**/*.ts*\""
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "tsc-alias": "^1.8.7",
     "tsconfig": "*",
     "typescript": "^4.9.5"
   },
@@ -19,6 +23,7 @@
     "react": "^18.2.0"
   },
   "peerDependencies": {
+    "@my-ui/core": "*",
     "react": "^18.2.0"
   }
 }

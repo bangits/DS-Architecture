@@ -1,6 +1,6 @@
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
-import { dirname, join } from "path";
-import { mergeConfig } from "vite";
+import path, { dirname, join } from "path";
+import { UserConfig, mergeConfig } from "vite";
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -9,6 +9,8 @@ import { mergeConfig } from "vite";
 const getAbsolutePath = (value: string) => {
   return dirname(require.resolve(join(value, "package.json")));
 };
+
+const packagesPath = path.resolve(__dirname, "../../../packages");
 
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
@@ -28,10 +30,16 @@ const config = {
   docs: {
     autodocs: "tag",
   },
-  viteFinal(config) {
+  viteFinal(config: UserConfig) {
     return mergeConfig(config, {
       plugins: [vanillaExtractPlugin()],
-    });
+      resolve: {
+        alias: {
+          "@my-ui/react": path.resolve(packagesPath, "./react/src"),
+          "@my-ui/core": path.resolve(packagesPath, "./core/src"),
+        },
+      },
+    } as UserConfig);
   },
 };
 
