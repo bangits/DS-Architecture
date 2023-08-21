@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@my-ui/core": "*"
+    "@my-ui/react": "*"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.3.1",

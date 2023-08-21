@@ -15,7 +15,7 @@ globalStyle(
     figure, figcaption, footer, header, hgroup, 
     menu, nav, output, ruby, section, summary,
     time, mark, audio, video
-`,
+  `,
   {
     margin: 0,
     padding: 0,

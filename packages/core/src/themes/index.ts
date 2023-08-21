@@ -3,4 +3,5 @@ export {
   defaultTheme,
   defaultThemeClassName,
   vars as defaultThemeVars,
+  type ThemeValues,
 } from "./default.css";

@@ -31,9 +31,6 @@ const config = {
   viteFinal(config) {
     return mergeConfig(config, {
       plugins: [vanillaExtractPlugin()],
-      optimizeDeps: {
-        include: ["@my-ui/core"],
-      },
     });
   },
 };
