@@ -35,8 +35,8 @@ const config = {
       plugins: [vanillaExtractPlugin()],
       resolve: {
         alias: {
-          "@my-ui/react": path.resolve(packagesPath, "./react/src"),
-          "@my-ui/core": path.resolve(packagesPath, "./core/src"),
+          "@mui/react": path.resolve(packagesPath, "./react/src"),
+          "@mui/core": path.resolve(packagesPath, "./core/src"),
         },
       },
     } as UserConfig);

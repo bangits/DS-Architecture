@@ -1,4 +1,4 @@
-import { button } from "@my-ui/core/styles/button/index.css";
+import { button } from "@mui/core/styles/button/index.css";
 import { FC } from "react";
 
 export interface ButtonProps {

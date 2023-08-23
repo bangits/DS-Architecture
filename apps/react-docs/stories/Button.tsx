@@ -1,4 +1,4 @@
-import MyUIButton from "@my-ui/react/Button";
+import MyUIButton from "@mui/react/Button";
 
 export const Button = () => {
   return <MyUIButton />;

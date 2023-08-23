@@ -1,4 +1,4 @@
-import { defaultThemeClassName } from "@my-ui/core/themes/default.css";
+import { defaultThemeClassName } from "@mui/core/themes/default.css";
 import { FC, ReactNode, useEffect, useRef } from "react";
 
 export interface ThemeProviderProps {

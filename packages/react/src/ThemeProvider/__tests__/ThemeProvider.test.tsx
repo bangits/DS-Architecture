@@ -1,4 +1,4 @@
-import { defaultThemeVars } from "@my-ui/core/themes";
+import { defaultThemeVars } from "@mui/core/themes";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 import ThemeProvider from "..";

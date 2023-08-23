@@ -4,10 +4,10 @@
     "baseUrl": ".",
     "jsx": "react-jsx",
     "paths": {
-      "@my-ui/core/*": ["../../packages/core/src/*"],
-      "@my-ui/core": ["../../packages/core/src"],
-      "@my-ui/react/*": ["../../packages/react/src/*"],
-      "@my-ui/react": ["../../packages/react/src"]
+      "@mui/core/*": ["../../packages/core/src/*"],
+      "@mui/core": ["../../packages/core/src"],
+      "@mui/react/*": ["../../packages/react/src/*"],
+      "@mui/react": ["../../packages/react/src"]
     }
   }
 }

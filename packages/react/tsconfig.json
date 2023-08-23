@@ -4,9 +4,9 @@
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "@my-ui/react/*": ["./src/*"],
-      "@my-ui/core": ["../core/src"],
-      "@my-ui/core/*": ["../core/src/*"]
+      "@mui/react/*": ["./src/*"],
+      "@mui/core": ["../core/src"],
+      "@mui/core/*": ["../core/src/*"]
     }
   },
   "include": ["src"],

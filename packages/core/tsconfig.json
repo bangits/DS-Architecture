@@ -4,7 +4,7 @@
     "rootDir": "./src",
     "outDir": "dist",
     "paths": {
-      "@my-ui/core/*": ["./src/*"]
+      "@mui/core/*": ["./src/*"]
     }
   },
   "include": ["./src"],

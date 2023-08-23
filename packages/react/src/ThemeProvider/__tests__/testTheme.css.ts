@@ -1,4 +1,4 @@
-import { ThemeValues, createTheme } from "@my-ui/core/themes";
+import { ThemeValues, createTheme } from "@mui/core/themes";
 
 export const testTheme: ThemeValues = {
   color: {

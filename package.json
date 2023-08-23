@@ -1,8 +1,8 @@
 {
-  "name": "@my-ui",
+  "name": "@mui",
   "private": true,
   "scripts": {
-    "deploy": "turbo run deploy --filter=@my-ui/*",
+    "deploy": "turbo run deploy --filter=@mui/*",
     "build": "turbo run build",
     "semantic-release": "turbo run semantic-release",
     "dev": "turbo run dev",

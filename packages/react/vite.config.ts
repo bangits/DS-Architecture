@@ -11,8 +11,8 @@ export default defineConfig({
       reporter: ["text", "json", "html"],
     },
     alias: {
-      "@my-ui/react": path.resolve(__dirname, "./src"),
-      "@my-ui/core": path.resolve(__dirname, "../core/src"),
+      "@mui/react": path.resolve(__dirname, "./src"),
+      "@mui/core": path.resolve(__dirname, "../core/src"),
     },
   },
   plugins: [react(), vanillaExtractPlugin()],

@@ -5,7 +5,7 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   test: {
     alias: {
-      "@my-ui/core": path.resolve(__dirname, "./src"),
+      "@mui/core": path.resolve(__dirname, "./src"),
     },
     coverage: {
       all: true,
