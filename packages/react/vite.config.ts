@@ -1,18 +1,19 @@
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
+import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
-    alias: {
-      "@my-ui/core": path.resolve(__dirname, "./src"),
-    },
+    environment: "jsdom",
     coverage: {
-      all: true,
-      exclude: ["src/**/*.index.ts"],
       provider: "v8",
       reporter: ["text", "json", "html"],
     },
+    alias: {
+      "@my-ui/react": path.resolve(__dirname, "./src"),
+      "@my-ui/core": path.resolve(__dirname, "../core/src"),
+    },
   },
-  plugins: [vanillaExtractPlugin()],
+  plugins: [react(), vanillaExtractPlugin()],
 });

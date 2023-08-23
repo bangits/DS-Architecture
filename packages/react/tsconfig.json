@@ -9,6 +9,6 @@
       "@my-ui/core/*": ["../core/src/*"]
     }
   },
-  "include": ["."],
-  "exclude": ["dist", "node_modules"]
+  "include": ["src"],
+  "exclude": ["dist", "node_modules", "src/**/*.test.ts", "**/__mocks__/*"]
 }

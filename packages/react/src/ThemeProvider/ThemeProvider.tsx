@@ -1,5 +1,5 @@
 import { defaultThemeClassName } from "@my-ui/core/themes/default.css";
-import { ReactNode, useEffect, useRef } from "react";
+import { FC, ReactNode, useEffect, useRef } from "react";
 
 export interface ThemeProviderProps {
   themeClassName?: string;
@@ -7,10 +7,10 @@ export interface ThemeProviderProps {
   children: ReactNode;
 }
 
-const ThemeProvider = ({
+const ThemeProvider: FC<ThemeProviderProps> = ({
   themeClassName = defaultThemeClassName,
   children,
-}: ThemeProviderProps): ReactNode => {
+}: ThemeProviderProps) => {
   const lastThemeClassName = useRef(themeClassName);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const ThemeProvider = ({
     lastThemeClassName.current = themeClassName;
   }, [themeClassName]);
 
-  return children;
+  return <>{children}</>;
 };
 
 export default ThemeProvider;

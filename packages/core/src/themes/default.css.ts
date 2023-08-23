@@ -3,7 +3,7 @@ import { tokenVars } from "../tokens/index.css";
 
 export const defaultTheme = {
   color: {
-    brand: tokenVars.color.gray[100],
+    brand: tokenVars.color.gray[100] as string,
   },
 };
 
