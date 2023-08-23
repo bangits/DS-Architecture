@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "deploy": "cd dist/react/src && npm publish",
-    "bundle": "tsc --project tsconfig.json && tsc-alias -p tsconfig.paths.json",
+    "bundle": "rm -rf dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.paths.json",
     "copy": "cp package.json dist/react/src && cp ../../.npmrc dist/react/src",
     "build": "npm run bundle && npm run copy",
     "lint": "eslint \"**/*.ts*\""

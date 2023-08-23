@@ -1,3 +1,4 @@
+export * from "./createTheme";
 export { darkTheme, darkThemeClassName } from "./dark.css";
 export {
   defaultTheme,
