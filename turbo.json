@@ -14,6 +14,13 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "test": {
+      "persistent": true
+    },
+    "ci": {
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
+      "dependsOn": ["test", "build"]
     }
   }
 }
