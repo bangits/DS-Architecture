@@ -15,12 +15,11 @@
       "cache": false,
       "persistent": true
     },
-    "test": {
-      "persistent": true
-    },
+    "test": {},
     "ci": {
       "inputs": ["src/**/*.tsx", "src/**/*.ts"],
-      "dependsOn": ["test", "build"]
+      "dependsOn": ["test", "build"],
+      "persistent": true
     }
   }
 }
