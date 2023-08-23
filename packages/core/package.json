@@ -5,6 +5,7 @@
   "types": "./index.d.ts",
   "license": "MIT",
   "scripts": {
+    "semantic-release": "semantic-release",
     "deploy": "cd dist && npm publish",
     "test": "vitest --coverage",
     "bundle": "rm -rf dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
@@ -13,12 +14,14 @@
     "lint": "eslint \"**/*.ts*\""
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
     "@vanilla-extract/vite-plugin": "^3.9.0",
     "@vitest/coverage-v8": "^0.34.2",
+    "configs": "*",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "semantic-release": "^21.0.9",
     "tsc-alias": "^1.8.7",
-    "tsconfig": "*",
     "typescript": "^4.5.2",
     "vitest": "^0.34.2"
   },
