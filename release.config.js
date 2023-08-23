@@ -6,6 +6,14 @@ const config = {
     [
       "@semantic-release/npm",
       {
+        pkgRoot: "packages/react",
+        npmPublish: false,
+      },
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        pkgRoot: "packages/core",
         npmPublish: false,
       },
     ],

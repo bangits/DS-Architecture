@@ -4,12 +4,14 @@
   "scripts": {
     "deploy": "turbo run deploy --filter=@mui/*",
     "build": "turbo run build",
-    "semantic-release": "turbo run semantic-release",
+    "semantic-release": "semantic-release",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^21.0.9",
     "@storybook/addon-actions": "^7.3.1",
     "@storybook/addon-essentials": "^7.3.1",
     "@storybook/addon-links": "^7.3.1",
