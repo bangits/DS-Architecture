@@ -4,7 +4,11 @@
   "main": "./index.js",
   "types": "./index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
+    "semantic-release": "set GITHUB_TOKEN=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 && semantic-release",
     "deploy": "cd dist/react/src && npm publish",
     "test": "vitest --coverage",
     "bundle": "rm -rf dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.paths.json",
@@ -13,6 +17,8 @@
     "lint": "eslint \"**/*.ts*\""
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.0.4",
     "@testing-library/react": "^14.0.0",
     "@vanilla-extract/vite-plugin": "^3.9.0",
     "@vitejs/plugin-react": "^4.0.4",
@@ -20,6 +26,7 @@
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "jsdom": "^22.1.0",
+    "semantic-release": "^21.0.9",
     "tsc-alias": "^1.8.7",
     "tsconfig": "*",
     "typescript": "^4.9.5",

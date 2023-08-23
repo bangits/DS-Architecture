@@ -6,6 +6,10 @@
       "inputs": ["src/**/*.tsx", "src/**/*.ts"]
     },
     "lint": {},
+    "semantic-release": {
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
+      "dependsOn": ["build"]
+    },
     "deploy": {
       "inputs": ["src/**/*.tsx", "src/**/*.ts"],
       "dependsOn": ["build"]
