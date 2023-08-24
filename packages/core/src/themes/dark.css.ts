@@ -1,10 +1,10 @@
-import { createTheme } from ".";
-import { tokenVars } from "../tokens/index.css";
+import { createTheme } from "@vanilla-extract/css";
 import { ThemeValues } from "./default.css";
+import { colorsRed100 } from "../tokens/color";
 
 export const darkTheme: ThemeValues = {
   color: {
-    brand: tokenVars.color.gray[900],
+    brand: colorsRed100,
   },
 };
 
