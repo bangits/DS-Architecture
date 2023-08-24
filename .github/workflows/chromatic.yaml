@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: cd apps/react-docs && npx chromatic --project-token=${{ secrets.PROJECT_TOKEN }}
+      - run: cd apps/react-docs && npx chromatic

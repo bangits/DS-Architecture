@@ -6,8 +6,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook --browsers firefox chromium",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_d1561db2a677a38"
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
