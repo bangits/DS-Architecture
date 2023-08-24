@@ -1,0 +1,16 @@
+name: Pull Request
+
+on:
+  push:
+
+jobs:
+  release:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: cd apps/react-docs && npx chromatic --project-token=${{ secrets.PROJECT_TOKEN }}
