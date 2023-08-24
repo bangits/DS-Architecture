@@ -1,29 +1,34 @@
 {
-    "name": "@my-ui",
-    "private": true,
-    "scripts": {
-        "deploy": "turbo run deploy --filter=@my-ui/*",
-        "build": "turbo run build",
-        "dev": "turbo run dev",
-        "lint": "turbo run lint",
-        "format": "prettier --write \"**/*.{ts,tsx,md}\""
-    },
-    "devDependencies": {
-        "@storybook/addon-actions": "^7.3.1",
-        "@storybook/addon-essentials": "^7.3.1",
-        "@storybook/addon-links": "^7.3.1",
-        "@storybook/builder-vite": "^7.3.1",
-        "@storybook/preset-create-react-app": "^1.2.0",
-        "@storybook/react": "^7.3.1",
-        "@turbo/gen": "^1.9.7",
-        "eslint": "^7.32.0",
-        "eslint-config-custom": "*",
-        "prettier": "^2.5.1",
-        "turbo": "latest"
-    },
-    "packageManager": "npm@9.6.7",
-    "workspaces": [
-        "apps/*",
-        "packages/*"
-    ]
+  "name": "@mui",
+  "private": true,
+  "scripts": {
+    "deploy": "turbo run deploy",
+    "ci": "turbo run ci",
+    "build": "turbo run build",
+    "semantic-release": "semantic-release",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^21.0.9",
+    "@storybook/addon-actions": "^7.3.1",
+    "@storybook/addon-essentials": "^7.3.1",
+    "@storybook/addon-links": "^7.3.1",
+    "@storybook/builder-vite": "^7.3.1",
+    "@storybook/preset-create-react-app": "^1.2.0",
+    "@storybook/react": "^7.3.1",
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.5.1",
+    "turbo": "^1.10.11"
+  },
+  "packageManager": "npm@9.6.7",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }

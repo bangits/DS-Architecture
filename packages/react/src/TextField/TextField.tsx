@@ -1,4 +1,4 @@
-import { textField } from "@my-ui/core/styles/text-field/index.css";
+import { textField } from "@mui/core/styles/text-field/index.css";
 import { FC } from "react";
 
 export interface TextFieldProps {

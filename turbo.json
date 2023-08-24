@@ -8,11 +8,19 @@
     "lint": {},
     "deploy": {
       "inputs": ["src/**/*.tsx", "src/**/*.ts"],
-      "dependsOn": ["build"]
+      "dependsOn": ["build"],
+      "persistent": true
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "test": {
+      "persistent": true
+    },
+    "ci": {
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
+      "dependsOn": ["test", "build"]
     }
   }
 }

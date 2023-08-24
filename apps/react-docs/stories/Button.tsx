@@ -1,5 +1,5 @@
-import MyUIButton from "@my-ui/react/Button";
-import ThemeProvider from "@my-ui/react/ThemeProvider";
+import MyUIButton from "@mui/react/Button";
+import ThemeProvider from "@mui/react/ThemeProvider";
 
 export const Button = () => {
   return (

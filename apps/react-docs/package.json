@@ -1,18 +1,18 @@
 {
-  "name": "@my-ui/react-docs",
+  "name": "@mui/react-docs",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
+    "test-storybook": "test-storybook --browsers firefox chromium",
     "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@my-ui/react": "*"
+    "@mui/react": "*"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.3.1",
@@ -21,8 +21,10 @@
     "@storybook/blocks": "^7.3.1",
     "@storybook/react": "^7.3.1",
     "@storybook/react-vite": "^7.3.1",
+    "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.0",
     "@vanilla-extract/vite-plugin": "^3.8.2",
+    "chromatic": "^6.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.3.1",

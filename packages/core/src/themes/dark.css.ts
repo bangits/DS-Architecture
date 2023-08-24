@@ -1,6 +1,6 @@
-import { createTheme } from "@vanilla-extract/css";
+import { createTheme } from ".";
 import { tokenVars } from "../tokens/index.css";
-import { ThemeValues, vars } from "./default.css";
+import { ThemeValues } from "./default.css";
 
 export const darkTheme: ThemeValues = {
   color: {
@@ -8,4 +8,4 @@ export const darkTheme: ThemeValues = {
   },
 };
 
-export const darkThemeClassName = createTheme(vars, darkTheme);
+export const darkThemeClassName = createTheme(darkTheme);

@@ -1,29 +1,41 @@
 {
-  "name": "@my-ui/react",
-  "version": "12.0.13",
+  "name": "@mui/react",
+  "version": "1.2.1",
   "main": "./index.js",
   "types": "./index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "deploy": "cd dist/react/src && npm publish",
-    "bundle": "tsc --project tsconfig.json && tsc-alias -p tsconfig.paths.json",
+    "test": "vitest --coverage",
+    "test-ui": "vitest --coverage --ui",
+    "bundle": "rm -rf dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.paths.json",
     "copy": "cp package.json dist/react/src && cp ../../.npmrc dist/react/src",
     "build": "npm run bundle && npm run copy",
     "lint": "eslint \"**/*.ts*\""
   },
   "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@vanilla-extract/vite-plugin": "^3.9.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "@vitest/coverage-v8": "^0.34.2",
+    "@vitest/ui": "^0.34.0",
+    "configs": "*",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
+    "jsdom": "^22.1.0",
     "tsc-alias": "^1.8.7",
-    "tsconfig": "*",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.33.0"
   },
   "dependencies": {
-    "@my-ui/core": "*",
+    "@mui/core": "*",
     "react": "^18.2.0"
   },
   "peerDependencies": {
-    "@my-ui/core": "*",
+    "@mui/core": "*",
     "react": "^18.2.0"
   }
 }

@@ -1,14 +1,14 @@
 {
-  "extends": "tsconfig/react-library.json",
+  "extends": "configs/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "@my-ui/react/*": ["./src/*"],
-      "@my-ui/core": ["../core/src"],
-      "@my-ui/core/*": ["../core/src/*"]
+      "@mui/react/*": ["./src/*"],
+      "@mui/core": ["../core/src"],
+      "@mui/core/*": ["../core/src/*"]
     }
   },
-  "include": ["."],
-  "exclude": ["dist", "node_modules"]
+  "include": ["src"],
+  "exclude": ["dist", "node_modules", "src/**/*.test.ts", "**/__mocks__/*"]
 }

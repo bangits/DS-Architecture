@@ -1,6 +1,6 @@
-import { radius } from "@my-ui/core/tokens/radius/radius";
-import { spacing } from "@my-ui/core/tokens/spacings/spacing";
-import { fonts } from "@my-ui/core/tokens/typography/fonts";
+import { radius } from "@mui/core/tokens/radius/radius";
+import { spacing } from "@mui/core/tokens/spacings/spacing";
+import { fonts } from "@mui/core/tokens/typography/fonts";
 import { ComplexStyleRule } from "@vanilla-extract/css";
 
 export const buttonBase: ComplexStyleRule = {

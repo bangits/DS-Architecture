@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "paths": {
-      "@my-ui/react/*": ["./src/*"]
+      "@mui/react/*": ["./src/*"]
     }
   }
 }
