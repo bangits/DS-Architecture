@@ -7,12 +7,12 @@
     "build": "turbo run build",
     "semantic-release": "semantic-release",
     "dev": "turbo run dev",
+    "build-storybook": "turbo run build-storybook",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
-    "semantic-release": "^21.0.9",
     "@storybook/addon-actions": "^7.3.1",
     "@storybook/addon-essentials": "^7.3.1",
     "@storybook/addon-links": "^7.3.1",
@@ -23,7 +23,8 @@
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "prettier": "^2.5.1",
-    "turbo": "^1.10.11"
+    "semantic-release": "^21.0.9",
+    "turbo": "^1.10.13"
   },
   "packageManager": "npm@9.6.7",
   "workspaces": [
