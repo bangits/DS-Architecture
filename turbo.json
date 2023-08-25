@@ -6,6 +6,7 @@
       "inputs": ["src/**/*.tsx", "src/**/*.ts"]
     },
     "lint": {},
+    "build-storybook": {},
     "deploy": {
       "inputs": ["src/**/*.tsx", "src/**/*.ts"],
       "dependsOn": ["build"],
