@@ -1,7 +1,7 @@
-name: Release
+name: Chromatic
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   release:
@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
           node-version: 18
@@ -17,7 +19,8 @@ jobs:
           path: ~/.npm
           key: npm-${{ hashFiles('**/package-lock.json') }}
       - run: npm ci
-      - run: npm run semantic-release
-      - run: npm run deploy
+      - run: npm run test
+      - run: cd apps/react-docs && npx chromatic
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+

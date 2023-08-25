@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "storybook": "sb dev -p 6006",
-    "build-storybook": "sb build"
+    "build-storybook": "sb build",
+    "test-storybook": "test-storybook --browsers firefox chromium",
   },
   "keywords": [],
   "author": "",
@@ -21,9 +22,11 @@
     "@storybook/cli": "^7.3.2",
     "@storybook/react": "^7.3.1",
     "@storybook/react-vite": "^7.3.1",
+    "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.0",
     "@vanilla-extract/vite-plugin": "^3.8.2",
     "envinfo": "^7.10.0",
+    "chromatic": "^6.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.3.1",
