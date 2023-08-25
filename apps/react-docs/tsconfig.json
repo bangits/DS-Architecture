@@ -8,6 +8,8 @@
       "@mui/core": ["../../packages/core/src"],
       "@mui/react/*": ["../../packages/react/src/*"],
       "@mui/react": ["../../packages/react/src"]
-    }
-  }
+    },
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
 }

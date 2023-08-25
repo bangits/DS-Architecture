@@ -1,5 +1,5 @@
 import { textField } from "@mui/core/styles/text-field/index.css";
-import { FC } from "react";
+import { memo } from "react";
 
 export interface TextFieldProps {
   label: string;
@@ -7,14 +7,14 @@ export interface TextFieldProps {
   onChange(): void;
 }
 
-const TextField: FC<TextFieldProps> = ({ onChange, label }) => {
-  return (
-    <label>
-      {label}
+const TextField = memo(({ onChange, label }: TextFieldProps) => (
+  <label>
+    {label}
 
-      <input className={textField()} onChange={onChange} />
-    </label>
-  );
-};
+    <input className={textField()} onChange={onChange} />
+  </label>
+));
+
+TextField.displayName = "TextField";
 
 export default TextField;

@@ -20,7 +20,8 @@ jobs:
           path: ~/.npm
           key: npm-${{ hashFiles('**/package-lock.json') }}
       - run: npm ci
-      - run: npm run test
+      - run: npm run ci
+      - run: npm run build
       - run: cd apps/react-docs && npx chromatic
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

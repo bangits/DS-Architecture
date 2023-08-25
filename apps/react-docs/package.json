@@ -5,8 +5,7 @@
     "main": "index.js",
     "scripts": {
         "storybook": "sb dev -p 6006",
-        "build-storybook": "sb build",
-        "test-storybook": "test-storybook --maxWorkers=2 --browsers firefox chromium"
+        "build-storybook": "sb build"
     },
     "keywords": [],
     "author": "",

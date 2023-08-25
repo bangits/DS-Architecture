@@ -9,7 +9,9 @@
     "dev": "turbo run dev",
     "build-storybook": "turbo run build-storybook",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test-changed": "turbo run test-changed",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
@@ -20,11 +22,11 @@
     "@storybook/preset-create-react-app": "^1.2.0",
     "@storybook/react": "^7.3.1",
     "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "prettier": "^2.5.1",
     "semantic-release": "^21.0.9",
-    "turbo": "^1.10.13"
+    "turbo": "^1.10.13",
+    "husky": "^8.0.0"
   },
   "packageManager": "npm@9.6.7",
   "workspaces": [
