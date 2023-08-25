@@ -4,6 +4,9 @@ import { fonts } from "@mui/core/tokens/typography/fonts";
 import { ComplexStyleRule } from "@vanilla-extract/css";
 
 export const buttonBase: ComplexStyleRule = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-evenly",
   fontFamily: fonts.inter.family,
   fontSize: fonts.inter.size[14],
   paddingTop: spacing[2],

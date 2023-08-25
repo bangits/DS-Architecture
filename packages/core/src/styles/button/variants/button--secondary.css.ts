@@ -1,6 +1,6 @@
-import { vars } from "@my-ui/core/themes/default.css";
-import { white } from "@my-ui/core/tokens/colors/white";
-import { tokenVars } from "@my-ui/core/tokens/index.css";
+import { vars } from "@mui/core/themes/default.css";
+import { white } from "@mui/core/tokens/colors/white";
+import { tokenVars } from "@mui/core/tokens/index.css";
 import { ComplexStyleRule } from "@vanilla-extract/css";
 
 export const buttonSecondary: ComplexStyleRule = {

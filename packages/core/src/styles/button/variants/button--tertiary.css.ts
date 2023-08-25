@@ -1,5 +1,5 @@
-import { vars } from "@my-ui/core/themes/default.css";
-import { tokenVars } from "@my-ui/core/tokens/index.css";
+import { vars } from "@mui/core/themes/default.css";
+import { tokenVars } from "@mui/core/tokens/index.css";
 import { ComplexStyleRule } from "@vanilla-extract/css";
 
 export const buttonTertiary: ComplexStyleRule = {
