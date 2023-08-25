@@ -15,7 +15,7 @@
     "bundle": "rm -rf dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.paths.json",
     "copy": "cp package.json dist/react/src && cp ../../.npmrc dist/react/src",
     "build": "npm run bundle && npm run copy",
-    "lint": "eslint \"src/**/*.ts\" \"src/**/*.tsx\""
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts\" \"src/**/*.tsx\""
   },
   "devDependencies": {
     "@testing-library/react": "^14.0.0",

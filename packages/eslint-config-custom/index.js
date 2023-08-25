@@ -5,6 +5,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    "prettier",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
@@ -25,6 +26,7 @@ module.exports = {
         classPropertiesAllowed: false,
       },
     ],
+    "no-empty-function": "error",
     "prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
     "func-style": ["error", "expression", { allowArrowFunctions: true }],
     "arrow-body-style": ["error", "as-needed"],

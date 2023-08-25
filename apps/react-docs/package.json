@@ -6,7 +6,8 @@
   "scripts": {
     "storybook": "sb dev -p 6006",
     "build-storybook": "sb build",
-    "test-storybook": "test-storybook --browsers firefox chromium"
+    "test-storybook": "test-storybook --browsers firefox chromium",
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts\" \"src/**/*.tsx\""
   },
   "keywords": [],
   "author": "",
