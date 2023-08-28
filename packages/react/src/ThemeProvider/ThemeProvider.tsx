@@ -15,7 +15,9 @@ const ThemeProvider: FC<ThemeProviderProps> = ({
   const lastThemeClassName = useRef(themeClassName);
 
   useEffect(() => {
-    registerFont("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+    registerFont(
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    );
     document.documentElement.classList.remove(lastThemeClassName.current);
     document.documentElement.classList.add(themeClassName);
 

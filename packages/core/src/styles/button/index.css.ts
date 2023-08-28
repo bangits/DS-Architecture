@@ -13,7 +13,7 @@ export const button = recipe({
       primary: buttonPrimary,
       secondary: buttonSecondary,
       tertiary: buttonTertiary,
-      link: buttonLink
-    }
+      link: buttonLink,
+    },
   },
 });

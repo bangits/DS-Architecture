@@ -1,3 +1,3 @@
 export const white = {
-    white: "#FFFFFF"
-}
+  white: "#FFFFFF",
+};

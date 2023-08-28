@@ -1,8 +1,11 @@
-import { ThemeValues, createTheme } from "@mui/core/themes";
+import { ThemeValues, createTheme, defaultTheme } from "@mui/core/themes";
+import { vars } from "@mui/core/themes/default.css";
 
 export const testTheme: ThemeValues = {
+  ...defaultTheme,
   color: {
-    brand: "black",
+    ...defaultTheme.color,
+    brand: vars.color.brand,
   },
 };
 
