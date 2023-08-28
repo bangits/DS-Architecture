@@ -1,8 +1,8 @@
 {
-    "compilerOptions": {
-        "skipLibCheck": true,
-        "declaration": true,
-        "moduleResolution": "NodeNext",
-        "target": "ESNext"
-    }
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "declaration": true,
+    "moduleResolution": "NodeNext",
+    "target": "ESNext"
+  }
 }
