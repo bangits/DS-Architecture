@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: ["react", "prefer-arrow"],
   rules: {
+    "no-console": "error",
     "prefer-arrow/prefer-arrow-functions": [
       "error",
       {
