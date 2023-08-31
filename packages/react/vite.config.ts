@@ -10,6 +10,10 @@ export default defineConfig({
       provider: "v8",
       reporter: ["text", "json", "html"],
     },
+    deps: {
+      inline: ["vitest-canvas-mock"],
+    },
+    setupFiles: ["./src/__tests__/setupFiles.ts"],
     alias: {
       "@mui/react": path.resolve(__dirname, "./src"),
       "@mui/core": path.resolve(__dirname, "../core/src"),

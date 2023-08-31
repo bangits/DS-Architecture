@@ -6,12 +6,14 @@
       "inputs": ["src/**/*.tsx", "src/**/*.ts"]
     },
     "lint": {},
+    "build-storybook": {},
+    "test-ui": {},
     "deploy": {
       "inputs": ["src/**/*.tsx", "src/**/*.ts"],
       "dependsOn": ["build"],
       "persistent": true
     },
-    "dev": {
+    "storybook": {
       "cache": false,
       "persistent": true
     },
