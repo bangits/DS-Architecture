@@ -3,6 +3,6 @@ import ThemeProvider from "@mui/react/ThemeProvider";
 
 export const Button = () => (
   <ThemeProvider>
-    <MyUIButton>Click me</MyUIButton>
+    <MyUIButton variant="primary">Button CTA</MyUIButton>
   </ThemeProvider>
 );

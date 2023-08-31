@@ -18,6 +18,7 @@
     "lint": "tsc --noEmit && eslint \"src/**/*.ts\" \"src/**/*.tsx\""
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@vanilla-extract/vite-plugin": "^3.9.0",
     "@vitejs/plugin-react": "^4.0.4",
