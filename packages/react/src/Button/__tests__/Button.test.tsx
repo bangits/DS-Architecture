@@ -6,7 +6,15 @@ import Button from "../Button";
 
 describe("Button testing", () => {
   test("Button render ", async () => {
-    render(<Button onClick={() => {}}>Click me</Button>);
+    render(
+      <Button
+        onClick={() => {
+          console.log("clicked");
+        }}
+      >
+        Click me
+      </Button>
+    );
     expect(document.getElementsByTagName("button")[0].innerHTML).toBe(
       "Click me"
     );

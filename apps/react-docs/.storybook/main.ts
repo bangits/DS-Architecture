@@ -19,9 +19,7 @@ const config = {
     "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
-    getAbsolutePath("@storybook/addon-knobs"),
     getAbsolutePath("@storybook/addon-actions"),
-    getAbsolutePath("@storybook/addon-storysource"),
     getAbsolutePath("@storybook/addon-a11y"),
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
