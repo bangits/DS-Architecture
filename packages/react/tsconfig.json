@@ -1,6 +1,7 @@
 {
   "extends": "configs/react-library.json",
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
