@@ -4,7 +4,6 @@ import { registerFont } from "./registerFont";
 
 export interface ThemeProviderProps {
   themeClassName?: string;
-
   children: ReactNode;
 }
 
