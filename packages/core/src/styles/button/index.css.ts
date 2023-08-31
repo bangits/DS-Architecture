@@ -5,16 +5,16 @@ import { buttonPrimary } from "./variants/button--primary.css";
 import { buttonSecondary } from "./variants/button--secondary.css";
 import { buttonTertiary } from "./variants/button--tertiary.css";
 
-const variants =  {
+const variants = {
   variant: {
     primary: buttonPrimary,
     secondary: buttonSecondary,
     tertiary: buttonTertiary,
     link: buttonLink,
   },
-}
+};
 
-export type ButtonVariants = keyof typeof variants.variant
+export type ButtonVariants = keyof typeof variants.variant;
 
 export const button = recipe({
   base: buttonBase,
