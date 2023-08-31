@@ -1,20 +1,14 @@
-import axe from "axe-core";
-import { expect, test, describe } from "vitest";
-import { render, cleanup } from "@testing-library/react";
 import { handleAxeRes } from "@mui/react/__tests__/helpers";
+import { cleanup, render } from "@testing-library/react";
+import axe from "axe-core";
+import { describe, expect, test, vi } from "vitest";
 import Button from "../Button";
 
 describe("Button testing", () => {
+  const onClick = vi.fn();
+
   test("Button render ", async () => {
-    render(
-      <Button
-        onClick={() => {
-          console.log("clicked");
-        }}
-      >
-        Click me
-      </Button>
-    );
+    render(<Button onClick={onClick}>Click me</Button>);
     expect(document.getElementsByTagName("button")[0].innerHTML).toBe(
       "Click me"
     );
