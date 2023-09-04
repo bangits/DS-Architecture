@@ -1,22 +1,20 @@
 import { vars } from "@mui/core/themes/default.css";
-import { white } from "@mui/core/tokens/colors/white";
-import { tokenVars } from "@mui/core/tokens/index.css";
 import { ComplexStyleRule } from "@vanilla-extract/css";
 
 export const buttonPrimary: ComplexStyleRule = {
-  background: vars.color.button.primary.states.default,
-  color: white.white,
+  background: vars.color.button.primary.default,
+  color: vars.color.text.onColor,
 
   ":hover": {
-    background: vars.color.button.primary.states.hover,
+    background: vars.color.button.primary.hovered,
   },
   ":active": {
-    background: vars.color.button.primary.states.selected,
+    background: vars.color.button.primary.selected,
   },
   ":disabled": {
     pointerEvents: "none",
     cursor: "no-drop",
-    background: vars.color.button.primary.states.disabled,
-    color: tokenVars.color.gray[400],
+    background: vars.color.button.disabled,
+    color: vars.color.text.disabled
   },
 };

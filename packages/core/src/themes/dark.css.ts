@@ -7,39 +7,35 @@ export const darkTheme: ThemeValues = {
     brand: tokenVars.color.teal[500],
     button: {
       primary: {
-        states: {
-          default: tokenVars.color.teal[500],
-          hover: tokenVars.color.teal[400],
-          selected: tokenVars.color.teal[300],
-          disabled: tokenVars.color.gray[200],
-        },
+        default: tokenVars.color.teal[500],
+        hovered: tokenVars.color.teal[400],
+        selected: tokenVars.color.teal[300],
       },
+
       secondary: {
-        states: {
-          default: tokenVars.color.gray[500],
-          hover: tokenVars.color.gray[400],
-          selected: tokenVars.color.gray[300],
-          disabled: tokenVars.color.gray[200],
-        },
+        default: tokenVars.color.gray[500],
+        hovered: tokenVars.color.gray[400],
+        selected: tokenVars.color.gray[300],
       },
-      tertiary: {
-        states: {
-          default: tokenVars.color.gray[500],
-          hover: tokenVars.color.gray[400],
-          selected: tokenVars.color.gray[200],
-          disabled: tokenVars.color.gray[200],
-        },
-      },
-      link: {
-        states: {
-          default: tokenVars.color.gray[500],
-          hover: tokenVars.color.gray[400],
-          selected: tokenVars.color.gray[300],
-          disabled: tokenVars.color.gray[200],
-        },
-      },
+
+      disabled: tokenVars.color.gray[200],
     },
+    text: {
+      onColor: tokenVars.color.white.white,
+      disabled: tokenVars.color.gray[400],
+      default: tokenVars.color.gray[500],
+      hovered: tokenVars.color.gray[400],
+      selected: tokenVars.color.gray[300],
+    },
+    border: {
+      default: tokenVars.color.gray[500],
+      hovered: tokenVars.color.gray[400],
+      selected: tokenVars.color.gray[300],
+      disabled: tokenVars.color.gray[400],
+    }
   },
+  borderRadius: tokenVars.borderRadius.small,
 };
 
 export const darkThemeClassName = createTheme(darkTheme);
+
