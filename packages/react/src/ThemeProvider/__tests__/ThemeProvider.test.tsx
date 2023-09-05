@@ -1,4 +1,5 @@
 import { defaultThemeVars } from "@mui/core/themes";
+import { vars } from "@mui/core/themes/default.css";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 import ThemeProvider from "..";
@@ -30,6 +31,6 @@ describe("ThemeProvider", () => {
       getComputedStyle(document.documentElement).getPropertyValue(
         defaultThemeVars.color.brand.replace("var(", "").replace(")", "")
       )
-    ).toBe("black");
+    ).toBe(vars.color.brand);
   });
 });

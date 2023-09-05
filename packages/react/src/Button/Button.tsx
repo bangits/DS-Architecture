@@ -1,17 +1,30 @@
-import { button } from "@mui/core/styles/button/index.css";
-import { memo, ReactNode } from "react";
+import { button, ButtonVariants } from "@mui/core/styles/button/index.css";
+import { FC, ReactNode } from "react";
 
-export interface ButtonProps {
-  children: ReactNode;
-  onClick(): void;
+export interface ButtonProps
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
+  variant: ButtonVariants;
+  iconRight?: ReactNode;
+  iconLeft?: ReactNode;
+  disabled?: true | false;
 }
+const Button: FC<ButtonProps> = ({
+  children,
+  iconLeft,
+  iconRight,
+  variant,
+  ...rest
+}) => (
+  <button {...rest} className={button({ variant })}>
+    {iconLeft}
 
-const Button = memo(({ onClick, children }: ButtonProps) => (
-  <button onClick={onClick} type="button" className={button()}>
-    {children}
+    <span>{children}</span>
+
+    {iconRight}
   </button>
-));
-
-Button.displayName = "Button";
+);
 
 export default Button;
