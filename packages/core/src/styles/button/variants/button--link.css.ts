@@ -9,11 +9,11 @@ export const buttonLink: ComplexStyleRule = {
 
   ":hover": {
     borderBottom: `1px solid ${vars.color.border.hovered}`,
-    color: vars.color.text.hovered
+    color: vars.color.text.hovered,
   },
   ":active": {
     borderBottom: `1px solid ${vars.color.border.selected}`,
-    color: vars.color.text.selected
+    color: vars.color.text.selected,
   },
   ":disabled": {
     borderBottom: `1px solid ${vars.color.border.disabled}`,

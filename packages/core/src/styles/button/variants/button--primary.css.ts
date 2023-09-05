@@ -15,6 +15,6 @@ export const buttonPrimary: ComplexStyleRule = {
     pointerEvents: "none",
     cursor: "no-drop",
     background: vars.color.button.disabled,
-    color: vars.color.text.disabled
+    color: vars.color.text.disabled,
   },
 };

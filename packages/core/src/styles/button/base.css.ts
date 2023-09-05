@@ -1,19 +1,17 @@
-import { radius } from "@mui/core/tokens/radius/radius";
-import { spacing } from "@mui/core/tokens/spacings/spacing";
-import { fonts } from "@mui/core/tokens/typography/fonts";
+import { vars } from "@mui/core/themes/default.css";
 import { ComplexStyleRule } from "@vanilla-extract/css";
 
 export const buttonBase: ComplexStyleRule = {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-evenly",
-  fontFamily: fonts.inter.family,
-  fontSize: fonts.inter.size[14],
-  paddingTop: spacing[2],
-  paddingBottom: spacing[2],
-  paddingLeft: spacing[4],
-  paddingRight: spacing[4],
-  borderRadius: radius.small,
+  fontFamily: vars.fontFamily,
+  fontSize: vars.fontSize,
+  paddingTop: vars.paddings.top,
+  paddingBottom: vars.paddings.bottom,
+  paddingLeft: vars.paddings.left,
+  paddingRight: vars.paddings.right,
+  borderRadius: vars.borderRadius,
   border: "none",
-  fontWeight: fonts.inter.weight[400],
+  fontWeight: vars.fontWeight
 };

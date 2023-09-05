@@ -32,10 +32,18 @@ export const darkTheme: ThemeValues = {
       hovered: tokenVars.color.gray[400],
       selected: tokenVars.color.gray[300],
       disabled: tokenVars.color.gray[400],
-    }
+    },
+  },
+  paddings: {
+    left: tokenVars.padding[4],
+    right: tokenVars.padding[4],
+    top: tokenVars.padding[2],
+    bottom: tokenVars.padding[2]
   },
   borderRadius: tokenVars.borderRadius.small,
+  fontFamily: tokenVars.fonts.family,
+  fontSize: tokenVars.fonts.size[14],
+  fontWeight: tokenVars.fonts.weight[400]
 };
 
 export const darkThemeClassName = createTheme(darkTheme);
-

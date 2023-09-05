@@ -6,14 +6,14 @@ export const buttonTertiary: ComplexStyleRule = {
   color: vars.color.text.default,
 
   ":hover": {
-    color: vars.color.text.hovered
+    color: vars.color.text.hovered,
   },
   ":active": {
-    color: vars.color.text.selected
+    color: vars.color.text.selected,
   },
   ":disabled": {
     pointerEvents: "none",
     cursor: "no-drop",
-    color: vars.color.text.disabled
+    color: vars.color.text.disabled,
   },
 };
