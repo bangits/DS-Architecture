@@ -13,5 +13,5 @@ export const buttonBase: ComplexStyleRule = {
   paddingRight: vars.paddings.right,
   borderRadius: vars.borderRadius,
   border: "none",
-  fontWeight: vars.fontWeight
+  fontWeight: vars.fontWeight,
 };

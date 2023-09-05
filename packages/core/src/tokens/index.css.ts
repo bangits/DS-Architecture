@@ -12,9 +12,9 @@ export const tokenVars = createGlobalTheme(":root", {
     ...radius,
   },
   padding: {
-    ...spacing
+    ...spacing,
   },
   fonts: {
-    ...fonts
-  }
+    ...fonts,
+  },
 });

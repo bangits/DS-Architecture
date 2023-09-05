@@ -14,8 +14,8 @@ export const fonts = {
     48: "48px",
   },
   weight: {
-    400: '400',
-    600: '600',
+    400: "400",
+    600: "600",
   },
   lineHeight: {
     18: "18px",
@@ -31,4 +31,4 @@ export const fonts = {
     60: "60px",
     72: "72px",
   },
-}
+};
